@@ -37,3 +37,14 @@ src/main/java/org/example/
 ├── service/
 │   └── PdfService.java       # PDF oluşturma işlemlerinden sorumlu servis sınıfı
 └── Main.java                 # Veri nesnelerini başlatan ve süreci tetikleyen ana sınıf
+
+---
+
+## Yapay Zekâ / Dil Modeli Kullanımı
+
+Bu projenin geliştirilme sürecinde büyük dil modellerinden (LLM) bir mimari danışman ve hata ayıklama aracı olarak faydalanılmıştır:
+
+- **Mimari Tasarım:** Yönergede istenen nesne yönelimli programlama (OOP) ve Tek Sorumluluk Prensibi (SRP) gereğince kodun `model` ve `service` katmanlarına ayrıştırılması.
+- **Kütüphane & Bağımlılık Yönetimi:** Proje gereksinimlerine uygun açık kaynaklı `OpenPDF` kütüphanesinin seçimi ve `pom.xml` yapılandırması.
+- **Hata Ayıklama (Debugging):** OpenPDF varsayılan fontlarındaki Türkçe karakter (Unicode/Encoding) eksikliğinin çözümü ve derleme hatalarının giderilmesi.
+- **Dokümantasyon:** Projenin sınıf yapısını, kullanılan bileşenleri ve kurulum adımlarını açıklayan GitHub dokümantasyonunun hazırlanması.
